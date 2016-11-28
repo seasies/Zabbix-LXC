@@ -11,5 +11,6 @@ Installation
 ============
 1. `$ sudo ./install.sh`
 2. Import "zbx_templates/Template_LXC_CT.xml"
-3. Import "zbx_templates/Template_LXC_Node.xml" If you using Proxmox "zbx_templates/Template_LXC_Node_Proxmox.xml"
+3. Import "zbx_templates/Template_LXC_Node.xml"  
+If you using Proxmox "zbx_templates/Template_LXC_Node_Proxmox.xml"
 4. Apply template "Template_LXC_Node" to LXC hardware node (otherwise known as host system).
