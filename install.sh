@@ -16,18 +16,22 @@ function yellow() {
     echo -e "$YELLOW$*$NORMAL"
 }
 
-pwd=$(cd $(dirname $0) && pwd)
-
 function checkPhp() {
-  php=`php -v`
-
   if [ $? -eq 1 ]; then
-    echo "Please install php"
+    red "Please install php"
+    exit 1
+  fi
+}
+
+function checkSudo() {
+  if [ $? -eq 1 ]; then
+    red "Please install sudo"
     exit 1
   fi
 }
 
 checkPhp
+checkSudo
 
 \cp -rf lxcdiscover.php /etc/zabbix
 \cp -rf lxc-attach.sh /etc/zabbix
