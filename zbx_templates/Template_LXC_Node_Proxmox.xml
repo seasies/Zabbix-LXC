@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.2</version>
-    <date>2016-11-28T10:34:26Z</date>
+    <date>2016-12-12T12:49:51Z</date>
     <groups>
         <group>
             <name>LXC</name>
@@ -722,7 +722,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>lxc.ct.discovery</key>
-                    <delay>300</delay>
+                    <delay>600</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -748,7 +748,7 @@
                     </filter>
                     <lifetime>30</lifetime>
                     <description>Discover  LXC container&#13;
-Script /etc/zabbix/lxcdiscover.pl</description>
+Script /etc/zabbix/lxcdiscover.php</description>
                     <item_prototypes/>
                     <trigger_prototypes/>
                     <graph_prototypes/>
