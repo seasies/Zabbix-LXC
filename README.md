@@ -2,7 +2,9 @@
 LXC node monitoring through Zabbix.  
 LXC containers monitoring through Zabbix.  
 Template "Template LXC Node" finds all containers, creates new hosts and apply template "Template LXC CT" on them.  
-This repository is forked from https://github.com/Lelik13a/Zabbix-LXC
+
+## This repository is forked from https://github.com/Lelik13a/Zabbix-LXC
+### support Proxmox
 
 # Dependencies
 php, sudo, zabbix-agent.
