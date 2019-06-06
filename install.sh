@@ -17,6 +17,8 @@ function yellow() {
 }
 
 function checkPhp() {
+  php -v
+
   if [ $? -eq 1 ]; then
     red "Please install php"
     exit 1
@@ -24,6 +26,8 @@ function checkPhp() {
 }
 
 function checkSudo() {
+  sudo echo "Checking sudo command is installed."
+
   if [ $? -eq 1 ]; then
     red "Please install sudo"
     exit 1
