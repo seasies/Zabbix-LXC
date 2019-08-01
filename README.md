@@ -17,6 +17,7 @@ Installation
 3. Import "zbx_templates/Template_LXC_Node.xml"  
 If you using Proxmox "zbx_templates/Template_LXC_Node_Proxmox.xml"
 4. Apply template "Template_LXC_Node" to LXC hardware node (otherwise known as host system).
+5. (on proxmox) check script `php lxcdiscovery.php`
 
 Supported Proxmox version
 -------------------------
